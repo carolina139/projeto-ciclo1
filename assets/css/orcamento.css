@@ -1,0 +1,360 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 120vh;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+}
+
+main {
+    width: 100%;
+    height: 85%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.container-orcamento {
+    background-color: #5C93AA;
+    width: 80%;
+    height: 90%;
+
+    border-radius: 15px;
+
+    padding: 2%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+} 
+
+.container-orcamento nav {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-orcamento nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    list-style: none;
+    gap: 30px;
+}
+
+.container-orcamento nav li {
+    
+
+    font-size: 16px;
+
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    padding-right: 6px;
+    padding-left: 6px;
+
+    cursor: pointer;
+}
+
+.container-orcamento nav #nav-geral {
+    border-bottom: white 3px solid;
+    border-left: #5C93AA 2px solid;
+    border-right: #5C93AA 2px solid;
+  
+}
+
+.container-orcamento nav #nav-aberto {
+    border-bottom: #8CC63F 3px solid;
+    border-left: #5C93AA 2px solid;
+    border-right: #5C93AA 2px solid;
+}
+
+.container-orcamento nav #nav-confirmado {
+    border-bottom: #5554FE 3px solid;
+    border-left: #5C93AA 2px solid;
+    border-right: #5C93AA 2px solid;
+}
+
+.container-orcamento nav #nav-arquivado {
+    border-bottom: #14ACFF 3px solid;
+    border-left: #5C93AA 2px solid;
+    border-right: #5C93AA 2px solid;
+}
+
+.container-orcamento nav #nav-geral.active {
+    border: none;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 10px 10px 0 0;
+}
+
+.container-orcamento nav #nav-aberto.active {
+    border: none;
+    background: #8CC63F;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.container-orcamento nav #nav-confirmado.active {
+    border: none;
+    background: #5554FE;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.container-orcamento nav #nav-arquivado.active {
+    border: none;
+    background: #14ACFF;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.container-orcamento nav .linha-nav {
+    width: 50%;
+    height: 1px;
+    background-color: #000000;
+}
+
+.container-orcamento .button-criar {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: end;
+}
+
+.container-orcamento #criarOrcamento {
+    background-color: #0C3756;
+    color: white;
+
+    width: fit-content;
+
+    border: 0;
+    border-radius: 6px;
+
+    padding: 6px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-orcamento .orcamento-display {
+    flex: 1; /* OCUPA TODO ESPAÇO DISPONÍVEL DO CONTAINER */
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    overflow-y: auto; /* scroll entra aqui */
+    padding-right: 10px; /* para evitar scrollbar em cima de cards */
+    box-sizing: border-box;
+}
+
+.container-orcamento .orcamento-display .card-orcamento {
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    height: fit-content;
+
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.container-orcamento .orcamento-display .card-orcamento ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    width: 90%;
+
+    margin: 5%;
+}
+
+.container-orcamento .orcamento-display .card-orcamento ul li {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 5fr;
+}
+
+.container-orcamento .orcamento-display .card-orcamento ul li p {
+   display: flex;
+   align-items: center;
+}
+
+.container-orcamento .orcamento-display .card-orcamento .tag-orcamento {
+    width: 70%;
+    height: 25px;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-orcamento .orcamento-display .card-orcamento p.aberto {
+    background-color:#8CC63F;
+}
+
+.container-orcamento .orcamento-display .card-orcamento p.confirmado {
+    background-color: #5554FE;
+}
+
+.container-orcamento .orcamento-display .card-orcamento p.arquivado {
+    background-color:#14ACFF;
+
+}
+
+.criarOrcamento {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    left: 0;
+    top: 0; 
+    z-index: 1;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  padding: 25px;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  width: 930px;
+}
+
+
+.linha {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.flex > div {
+  flex: 1;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  background: rgba(255,255,255,0.4);
+}
+
+textarea {
+  height: 95px;
+  resize: none;
+}
+
+.descricao {
+  flex: 2;
+}
+
+
+.botoes {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirmar {
+  background: #5c7bff;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+.abrindo {
+  background: #78ce43;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+.arquivar {
+  background: #e84848;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+.total {
+  background: rgba(0,0,0,0.35);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+
+

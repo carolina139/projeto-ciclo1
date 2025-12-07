@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamentos</title>
+    <link rel="icon" href="assets/img/faviconcomfundo.ico">
+    <link rel="stylesheet" href="assets/css/orcamento.css">
+</head>
+
+<body>
+    <div class="criarOrcamento">
+        <form action="">
+            <div class="linha">
+                <label>Cliente:</label>
+                <input type="text">
+            </div>
+
+            <div class="linha">
+                <label>Endereço:</label>
+                <input type="text">
+            </div>
+
+            <div class="linha flex">
+                <div>
+                    <label>Telefone:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Data do Orçamento:</label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="linha flex">
+                <div class="descricao">
+                    <label>Descrição:</label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="flex-col">
+                    <label>Material:</label>
+                    <input type="text">
+
+                    <label>Acabamento:</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="linha flex">
+                <div>
+                    <label>Cuba:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Vista:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Saia:</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="linha flex">
+                <div>
+                    <label>Data de Entrega:</label>
+                    <input type="date">
+                </div>
+
+                <div>
+                    <label>Entrada:</label>
+                    <input type="text" value="">
+                </div>
+
+                <div>
+                    <label>Restante:</label>
+                    <input type="text" value="">
+                </div>
+            </div>
+
+
+
+            <div class="botoes">
+                <div class="linha">
+                    <label>Status:</label>
+                    <select id="statusSelect" class="status">
+                        <option value="confirmar">Confirmado</option>
+                        <option value="abrindo">Aberto</option>
+                    </select>
+                </div>
+                <button class="arquivar">Arquivar</button>
+                <div class="total">Valor Total: </div>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div class="title">
+            <h2>Marmoraria Nova Canaã</h2>
+            <nav>
+                <ul>
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#catalogo">catalogo</a>
+                    <a href="#avaliacoes">Avaliações</a>
+                    <a href="#contato">Contato</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-orcamento">
+            <nav>
+                <ul>
+                    <li id="nav-geral">Geral</li>
+                    <li id="nav-aberto" class="active">Abertos</li>
+                    <li id="nav-confirmado">Confirmados</li>
+                    <li id="nav-arquivado">Arquivados</li>
+                </ul>
+                <div class="linha-nav"></div>
+            </nav>
+
+            <div class="button-criar">
+                <button id="criarOrcamento">novo orçamento <p>+</p></button>
+            </div>
+            <div class="orcamento-display">
+                <div class="card-orcamento">
+                    <ul>
+                        <li>
+                            <img src="assets/img/calendar_4864602 1.png" alt="">
+                            <p>26/11/2025</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/person_13937526 1.png" alt="">
+                            <p>Cliente 1</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-pedra-100 1.png" alt="">
+                            <p>Material</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/file_1052636 1.png" alt="">
+                            <p>Balcão de complemento</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-cifrão-100 1.png" alt="">
+                            <p>R$ 00,00</p>
+                        </li>
+                    </ul>
+                    <p class="tag-orcamento aberto">Aberto</p>
+                </div>
+                <div class="card-orcamento">
+                    <ul>
+                        <li>
+                            <img src="assets/img/calendar_4864602 1.png" alt="">
+                            <p>26/11/2025</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/person_13937526 1.png" alt="">
+                            <p>Cliente 1</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-pedra-100 1.png" alt="">
+                            <p>Material</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/file_1052636 1.png" alt="">
+                            <p>Balcão de complemento</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-cifrão-100 1.png" alt="">
+                            <p>R$ 00,00</p>
+                        </li>
+                    </ul>
+                    <p class="tag-orcamento aberto">Aberto</p>
+                </div>
+                <div class="card-orcamento">
+                    <ul>
+                        <li>
+                            <img src="assets/img/calendar_4864602 1.png" alt="">
+                            <p>26/11/2025</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/person_13937526 1.png" alt="">
+                            <p>Cliente 1</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-pedra-100 1.png" alt="">
+                            <p>Material</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/file_1052636 1.png" alt="">
+                            <p>Balcão de complemento</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-cifrão-100 1.png" alt="">
+                            <p>R$ 00,00</p>
+                        </li>
+                    </ul>
+                    <p class="tag-orcamento confirmado">Confirmado</p>
+                </div>
+                <div class="card-orcamento">
+                    <ul>
+                        <li>
+                            <img src="assets/img/calendar_4864602 1.png" alt="">
+                            <p>26/11/2025</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/person_13937526 1.png" alt="">
+                            <p>Cliente 1</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-pedra-100 1.png" alt="">
+                            <p>Material</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/file_1052636 1.png" alt="">
+                            <p>Balcão de complemento</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-cifrão-100 1.png" alt="">
+                            <p>R$ 00,00</p>
+                        </li>
+                    </ul>
+                    <p class="tag-orcamento arquivado">Arquivado</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/orcamentos.js"></script>
+</body>
+
+</html>
