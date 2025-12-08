@@ -37,13 +37,13 @@ img.logo {
 }
 
 img.user {
-    width: 50px;
+    width: 45px;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 .user:hover {
-    transform: scale(1.3);
+    transform: scale(0.7);
 }
 
 main {
