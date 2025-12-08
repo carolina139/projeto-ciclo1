@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orçamentos - Marmoraria Nova Canaã</title>
-     <link rel="icon" href="assets/img/faviconcomfundo.ico">
+    <link rel="icon" href="assets/img/faviconcomfundo.ico">
     <link rel="stylesheet" href="assets/css/orcamento.css">
 </head>
 
@@ -99,7 +99,8 @@
     </div>
     <header>
         <img class="logo" src="assets/img/logo.png" alt="logo" onclick="window.location.href='index.html'">
-        <img class="user" src="assets/img/iconlogin.png" alt="icon de login" onclick="window.location.href='perfil.html'">
+        <img class="user" src="assets/img/iconlogin.png" alt="icon de login"
+            onclick="window.location.href='perfil.html'">
     </header>
     <main>
         <div class="container-orcamento">
@@ -114,38 +115,131 @@
             </nav>
 
             <div class="button-criar">
-                <button id="criarOrcamento" onclick="ExibirCriarOrcamento()">novo orçamento <p>+</p></button>
+                <button id="criarOrcamento" onclick="ExibirCriarOrcamentoNovo()">novo orçamento <p>+</p></button>
             </div>
             <div class="orcamento-display" id="orcamento_list">
-                <div class="card-orcamento">
+                <div class="card-orcamento" data-cliente="Fernanda Alves"
+                    data-endereco="Rua das Flores, 123 - Santos/SP" data-telefone="(13) 98888-1111"
+                    data-dataorcamento="2025-02-01"
+                    data-descricao="Balcão em granito Branco Dallas com frontão de 10cm e recorte para cooktop."
+                    data-material="Granito Branco Dallas" data-acabamento="Borda reta polida"
+                    data-cuba="Tramontina 34x40" data-vista="Vista única" data-saia="Saia 4cm"
+                    data-dataentrega="2025-03-05" data-entrada="R$ 2.500,00" data-restante="R$ 3.200,00"
+                    data-valor="R$ 5.700,00">
                     <ul>
                         <li>
                             <img src="assets/img/calendar_4864602 1.png" alt="">
-                            <p>26/11/2025</p>
+                            <p>05/03/2025</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/calendar_4864602 1.png" alt="">
+                            <p>Orçamento: 01/02/2025</p>
                         </li>
                         <li>
                             <img src="assets/img/person_13937526 1.png" alt="">
-                            <p>Cliente 1</p>
+                            <p>Fernanda Alves</p>
                         </li>
                         <li>
                             <img src="assets/img/icons8-pedra-100 1.png" alt="">
-                            <p>Material</p>
+                            <p>Granito Branco Dallas</p>
                         </li>
                         <li>
                             <img src="assets/img/file_1052636 1.png" alt="">
-                            <div class="descricao-limitada" id="descricao1">
-                                Balcão de complemento para cozinha com acabamento em MDF branco TX, puxadores embutidos
-                                e saia com recorte para rodapé.
+                            <div class="descricao-limitada" id="descricao_seed1">
+                                Balcão em granito Branco Dallas com frontão de 10cm e recorte para cooktop.
                             </div>
-                            <button type="button" class="ver-mais" onclick="toggleDescricao('descricao1', this)">Ver
+                            <button type="button" class="ver-mais"
+                                onclick="toggleDescricao('descricao_seed1', this)">Ver
                                 mais</button>
                         </li>
                         <li>
                             <img src="assets/img/icons8-cifrão-100 1.png" alt="">
-                            <p>R$ 00,00</p>
+                            <p>R$ 5.700,00</p>
                         </li>
                     </ul>
                     <p class="tag-orcamento aberto">Aberto</p>
+                </div>
+
+                <div class="card-orcamento" data-cliente="Carlos Pereira"
+                    data-endereco="Av. Brasil, 450 - Praia Grande/SP" data-telefone="(13) 97777-2222"
+                    data-dataorcamento="2025-01-20"
+                    data-descricao="Bancada de banheiro em Quartzo Branco Prime com cuba esculpida 50cm."
+                    data-material="Quartzo Branco Prime" data-acabamento="45° polido" data-cuba="Cuba esculpida 50cm"
+                    data-vista="Vista dupla" data-saia="Saia 3cm" data-dataentrega="2025-02-10"
+                    data-entrada="R$ 1.800,00" data-restante="R$ 1.800,00" data-valor="R$ 3.600,00">
+                    <ul>
+                        <li>
+                            <img src="assets/img/calendar_4864602 1.png" alt="">
+                            <p>10/02/2025</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/calendar_4864602 1.png" alt="">
+                            <p>Orçamento: 20/01/2025</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/person_13937526 1.png" alt="">
+                            <p>Carlos Pereira</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-pedra-100 1.png" alt="">
+                            <p>Quartzo Branco Prime</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/file_1052636 1.png" alt="">
+                            <div class="descricao-limitada" id="descricao_seed2">
+                                Bancada de banheiro em Quartzo Branco Prime com cuba esculpida 50cm.
+                            </div>
+                            <button type="button" class="ver-mais"
+                                onclick="toggleDescricao('descricao_seed2', this)">Ver
+                                mais</button>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-cifrão-100 1.png" alt="">
+                            <p>R$ 3.600,00</p>
+                        </li>
+                    </ul>
+                    <p class="tag-orcamento confirmado">Confirmado</p>
+                </div>
+
+                <div class="card-orcamento" data-cliente="Juliana Costa" data-endereco="Rua do Sol, 89 - São Vicente/SP"
+                    data-telefone="(13) 96666-3333" data-dataorcamento="2024-12-15"
+                    data-descricao="Ilha gourmet em Granito Preto São Gabriel com nicho para adega embutida."
+                    data-material="Granito Preto São Gabriel" data-acabamento="Bordas boleadas"
+                    data-cuba="Cuba dupla 34x40" data-vista="Vista 360" data-saia="Saia 5cm"
+                    data-dataentrega="2025-01-25" data-entrada="R$ 4.000,00" data-restante="R$ 4.500,00"
+                    data-valor="R$ 8.500,00">
+                    <ul>
+                        <li>
+                            <img src="assets/img/calendar_4864602 1.png" alt="">
+                            <p>25/01/2025</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/calendar_4864602 1.png" alt="">
+                            <p>Orçamento: 15/12/2024</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/person_13937526 1.png" alt="">
+                            <p>Juliana Costa</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-pedra-100 1.png" alt="">
+                            <p>Granito Preto São Gabriel</p>
+                        </li>
+                        <li>
+                            <img src="assets/img/file_1052636 1.png" alt="">
+                            <div class="descricao-limitada" id="descricao_seed3">
+                                Ilha gourmet em Granito Preto São Gabriel com nicho para adega embutida.
+                            </div>
+                            <button type="button" class="ver-mais"
+                                onclick="toggleDescricao('descricao_seed3', this)">Ver
+                                mais</button>
+                        </li>
+                        <li>
+                            <img src="assets/img/icons8-cifrão-100 1.png" alt="">
+                            <p>R$ 8.500,00</p>
+                        </li>
+                    </ul>
+                    <p class="tag-orcamento arquivado">Arquivado</p>
                 </div>
             </div>
         </div>
