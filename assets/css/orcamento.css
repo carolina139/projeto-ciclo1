@@ -490,4 +490,73 @@ form {
     font-size: 14px;
 }
 }
+/*telas menores*/
+@media (max-width: 577px){
+    
+header {
+    padding: 20px 40px;
+}
+
+img.logo {
+    width: 45px;
+}
+
+img.user {
+    width: 25px;
+}
+/*fundo*/
+
+.container-orcamento{
+    width: 90%;
+    height: 75%;
+}
+.container-orcamento nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px;
+    width: 100%;
+}
+
+.container-orcamento .orcamento-display {
+        display: flex;
+        flex-direction: column;
+        
+    }
+.button-criar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 35px auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+/*form*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 15px;
+    border-radius: 12px;
+    width: 90%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.confirmar,.abrindo,.arquivar,.adicionar,.total{
+    padding: 10px 15px;
+}
+.botoes{
+    font-size: 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: start;
+}
+}
+
 
