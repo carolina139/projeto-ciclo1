@@ -144,6 +144,7 @@ button {
 
     h2 {
         font-size: 40px;
+        text-aling: center;
     }
 
      form {
@@ -162,32 +163,34 @@ button {
 @media only screen and (max-width: 376px) {
     .container {
         height: auto;
-        width: 100%;
-        border-radius: 0;
+        width: 80%;
+        border-radius: 20;
         gap: 5px;
     }
 
     .logo {
         height: auto;
-        width: 80%;
+        width: 50%;
         justify-content: center;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 26px;
+        ttext-align: center;
     }
 
     form {
-        width: 90%;
+        width: 80%;
        
     }
 
     form input {
-        height: 50px;
-        font-size: 20px;
+        height: 30px;
+        font-size: 16px;
         padding: 15px;
     }
 
 }
+
 
 
