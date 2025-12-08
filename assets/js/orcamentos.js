@@ -304,10 +304,6 @@ function preencherCardComDados(card, dados) {
             <ul>
                 <li>
                     <img src="assets/img/calendar_4864602 1.png" alt="">
-                    <p>${dataEntregaFmt}</p>
-                </li>
-                <li>
-                    <img src="assets/img/calendar_4864602 1.png" alt="">
                     <p>Orçamento: ${dataOrcFmt}</p>
                 </li>
                 <li>
@@ -324,6 +320,10 @@ function preencherCardComDados(card, dados) {
                         ${dados.descricao}
                     </div>
                     <button type="button" class="ver-mais" onclick="toggleDescricao('${uniqueId}', this)">Ver mais</button>
+                </li>
+                <li>
+                    <img src="assets/img/calendar_4864602 1.png" alt="">
+                    <p>Entrega: ${dataEntregaFmt}</p>
                 </li>
                 <li>
                     <img src="assets/img/icons8-cifrão-100 1.png" alt="">
