@@ -266,6 +266,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer; /* deixa o mouse como mãozinha no status */
 }
 
 .container-orcamento .orcamento-display .card-orcamento p.aberto {
